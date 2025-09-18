@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Descargas Celulares</title>
+  <link rel="stylesheet" href="colorcelular.css">
+</head>
+<body>
+  <div class="container">
+    <h1>📱 Descarga de Celulares</h1>
+
+    <div class="juego">
+      <h2>Celular Optimizado</h2>
+      <p>Elige la versión que deseas descargar:</p>
+      <select id="versionSelect">
+        <option value="1">Android 11</option>
+        <option value="2">Android 12</option>
+        <option value="3">Android 13</option>
+        <option value="4">Android 14</option>
+      </select>
+      <br><br>
+      <button onclick="abrirModal()">Ver enlaces</button>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div id="modal" class="modal">
+    <div class="modal-contenido">
+      <span class="cerrar" onclick="cerrarModal()">&times;</span>
+      <h2>Enlaces de descarga</h2>
+      <p>Selecciona dónde quieres descargar:</p>
+      <a id="linkMega" href="#" target="_blank">Mega</a> | 
+      <a id="linkMediafire" href="#" target="_blank">Mediafire</a>
+    </div>
+  </div>
+
+  <script src="linkcelular.js"></script>
+</body>
+</html>
